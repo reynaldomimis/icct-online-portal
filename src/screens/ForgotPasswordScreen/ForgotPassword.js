@@ -11,21 +11,22 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import CustomToolbar from "../../components/Toolbar/Toolbar";
 import styles from "./styles";
 
 const F = ({ navigation }) => {
+  const setBack = () => {
+    navigation.goBack();
+  };
   return (
     <View style={styles.container}>
       <View style={styles.centerContainer}>
         <View showsVerticalScrollIndicator={false} style={styles.baseContainer}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
-            <Ionicons
-              name={"arrow-back"}
-              size={30}
-              style={styles.backIcon}
-              color={"#003CD6"}
-            />
-          </TouchableOpacity>
+          <CustomToolbar
+            label="Forgot Password"
+            onPress={setBack}
+            bgColor={"white"}
+          />
           <View style={styles.forgotContainer}>
             <Text style={styles.forgotPass}>Forgot password</Text>
             <Text style={styles.enter}>

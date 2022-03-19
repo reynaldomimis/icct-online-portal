@@ -149,7 +149,10 @@ const SignUpScreen = ({ navigation }) => {
                 I accept terms and conditions & privacy policy
               </Text>
             </View>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => navigation.navigate("OTP", { phoneNumber })}
+            >
               <Text style={styles.buttonText}>Register</Text>
             </TouchableOpacity>
             <View style={styles.loginContainer}>
