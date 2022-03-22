@@ -6,10 +6,6 @@ const App = () => {
   return (
     <View style={styles.root}>
       <Navigation />
-      <Text>Try 2</Text>
-      <Text>Try 2</Text>
-      <Text>Try 2</Text>
-      <Text>Try 2</Text>
     </View>
   );
 };
