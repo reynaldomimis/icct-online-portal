@@ -11,7 +11,7 @@ import ViewSection from "./ViewSection";
 const SectionOffering = () => {
   return (
     <View>
-      <Text>SectionOffering</Text>
+      <Text>SectionOfferingSample</Text>
       
      <SchoolYear />
       <Term />
