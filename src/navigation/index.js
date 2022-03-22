@@ -19,6 +19,7 @@ import SignUpScreen from "../screens/SignUpScreen/SignUpScreen";
 import SignInScreen from "../screens/SignInScreen/SignInScreen";
 import SplashScreen from "../screens/SplashScreen/SplashScreen";
 import GetStartedScreen from "../screens/GetStartedScreen/GetStartedScreen";
+import Step1 from '../screens/ProfileScreen/Stepone/Step1';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,7 +27,7 @@ const Navigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="SignIn"
+        initialRouteName="Step1"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="Account" component={AccountScreen} />
@@ -44,6 +45,7 @@ const Navigation = () => {
         <Stack.Screen name="SignIn" component={SignInScreen} />
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="GetStarted" component={GetStartedScreen} />
+        <Stack.Screen name="Step1" component={Step1} />
         <Stack.Screen
           name="SectionOffering"
           component={SectionOfferingScreen}
