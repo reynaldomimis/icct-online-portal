@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 import Navigation from "./src/navigation/index";
+import ScheduleScreen from "./src/screens/ScheduleScreen/ScheduleScreen";
 
 const App = () => {
   return (
     <View style={styles.root}>
-      <Navigation />
+      <ScheduleScreen />
     </View>
   );
 };
