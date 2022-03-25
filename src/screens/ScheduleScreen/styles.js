@@ -3,21 +3,32 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     
     container: { 
-        flex: 1,
+        
         padding: 15,
         paddingTop: 35,
         backgroundColor: '#ffffff' 
       },
-      HeadStyle: { 
-        height: 50,
+      HeadTableStyle: { 
+        width: 2000,
+        size: 100,
         alignContent: "center",
         backgroundColor: '#1D4DF9',
+      
         
       },
+
+      dataHeaderStyle:{
+        width: 1000,
+        size: 100,
+        alignContent: "center",
+        backgroundColor: '#1D4DF9',
+      },
       TableText: { 
-        margin: 10,
+        marginTop: 10,
+        marginBottom: 10,
         color:'white',
         fontWeight: 'bold',
+        textAlign: 'center',
       
       },
       ContentTableText:{

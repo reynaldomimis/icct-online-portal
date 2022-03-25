@@ -15,7 +15,7 @@ export default class ScheduleScreen extends Component {
         ['OLPT1', 'INTEGRATIVE PROGRAMMING AND TECHNOLOGIES 1 (3/1)', '3','1', '4', '4', 'BSIT B- Third Year-OL22A18', 'VRM18', '', 'F 05:00PM-06:00PM VRM18', '01/12/2022' ],
       ],
 
-      dateHeader: ['Sunday','Monday','Tuesday','wednesday', 'Thursday', 'Friday', 'Saturday'],
+      dateHeader: ['Sunday','Monday','Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'],
       scheduleTable:[
         ['03:00 - 04:00 OLCAPS1 BSIT-B Third Year-OL22A18 VRM18', '', '', '', '', '', ''],
         ['TH 03:00PM-04:00PM VRM18', '', '', '', '', '', ''],
@@ -40,14 +40,14 @@ export default class ScheduleScreen extends Component {
 
         <ScrollView horizontal = {true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false} style={styles.tables}>
           <Table borderStyle={{borderWidth: 1, borderColor: 'grey'}}>
-          <Row data={state.HeadTable} style={styles.HeadStyle} textStyle={styles.TableText}/>
+          <Row data={state.HeadTable} style={styles.HeadTableStyle} textStyle={styles.TableText}/>
           <Rows data={state.DataTable} textStyle={styles.ContentTableText}/>
           </Table>
         </ScrollView>
          
         <ScrollView horizontal = {true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false} style={styles.tables}>
           <Table borderStyle={{borderWidth: 1, borderColor: 'grey'}}>
-          <Row data={state.dateHeader} style={styles.HeadStyle} textStyle={styles.TableText}/>
+          <Row data={state.dateHeader} style={styles.dataHeaderStyle} textStyle={styles.TableText}/>
           <Rows data={state.scheduleTable} textStyle={styles.ContentTableText}/>
           </Table>
         </ScrollView>
