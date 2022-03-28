@@ -1,24 +1,21 @@
 import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
   },
-  phoneContainer: {
-    width: "75%",
-    height: 50,
+  checkboxContainer: {
+    flexDirection: "row",
+    alignSelf: "stretch"
+
   },
-  button: {
-    marginTop: 30,
-    width: "75%",
-    padding: 10,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "green",
+  checkbox: {
+    alignSelf: "center",
   },
-  textInput: {
-    paddingVertical: 0,
+  label: {
+    margin: 8,
+    fontSize: 12
+
   },
 });
 export default styles;
