@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 //importing screens components
+{/*
 import AccountScreen from "../screens/AccountScreen/AccountScreen";
 import CalendarScreen from "../screens/CalendarScreen/CalendarScreen";
 import DashboardScreen from "../screens/DashboardScreen/DashboardScreen";
@@ -14,12 +15,15 @@ import OTPScreen from "../screens/OTPScreen/OTPScreen";
 import ProfileScreen from "../screens/ProfileScreen/ProfileScreen";
 import RegistrationScreen from "../screens/RegistrationScreen/RegistrationScreen";
 import ScheduleScreen from "../screens/ScheduleScreen/ScheduleScreen";
+*/}
 import SectionOfferingScreen from "../screens/SectionOfferingScreen/SectionOffering";
+{/*
 import SignUpScreen from "../screens/SignUpScreen/SignUpScreen";
 import SignInScreen from "../screens/SignInScreen/SignInScreen";
 import SplashScreen from "../screens/SplashScreen/SplashScreen";
 import GetStartedScreen from "../screens/GetStartedScreen/GetStartedScreen";
 
+*/}
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +34,7 @@ const Navigation = () => {
         initialRouteName="SectionOffering"
         screenOptions={{ headerShown: false }}
       >
+        {/*
         <Stack.Screen name="Account" component={AccountScreen} />
         <Stack.Screen name="Calendar" component={CalendarScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
@@ -45,6 +50,7 @@ const Navigation = () => {
         <Stack.Screen name="SignIn" component={SignInScreen} />
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="GetStarted" component={GetStartedScreen} />
+  */}
         <Stack.Screen name="SectionOffering" component={SectionOfferingScreen} />
 
       </Stack.Navigator>

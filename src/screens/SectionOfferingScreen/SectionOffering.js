@@ -6,20 +6,24 @@ import Program from "./Program"
 import YearLevel from "./YearLevel"
 import ParentSection from "./ParentSection"
 import ViewSection from "./ViewSection";
+import ViewSectionButton from "./ViewSectionButton"
+import ViewOpenSubjectButton from "./ViewOpenSubjectsButton";
+
 
 
 const SectionOffering = () => {
   return (
     <View>
-      <Text>SectionOfferingSample</Text>
-      
+      <Text>SectionOffering</Text>
      <SchoolYear />
       <Term />
       <Program />
       <YearLevel />
       <ParentSection />
-      <ViewSection /> 
-
+      <ViewSectionButton />
+      <ViewOpenSubjectButton />
+      <ViewSection />
+     
     </View>
 
   );
