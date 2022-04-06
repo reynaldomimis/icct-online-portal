@@ -6,18 +6,44 @@ const YearLevel = () => {
   const [selectedValue, setSelectedValue] = useState("");
   return (
     <View style={styles.container}>
-      <Text>Year Level:</Text>
+      <Text style={styles.headtext}>Year Level:</Text>
       <View style={styles.pickerborder}>
       <Picker
+        mode="dropdown"
         selectedValue={selectedValue}
-        style={{ height: 40, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="-level-" value="" />
-        <Picker.Item label="First Year" value="" />
-        <Picker.Item label="Second Year" value="" />
-        <Picker.Item label="Third Year" value="" />
-        <Picker.Item label="Fourth Year" value="" />
+
+        <Picker.Item 
+        style={{fontSize: 14 }}
+        label="-level-" 
+        value="" 
+        />
+
+        <Picker.Item 
+        style={{fontSize: 14 }}
+        label="First Year" 
+        value="" 
+        />
+        
+        <Picker.Item
+        style={{fontSize: 14 }}
+        label="Second Year" 
+        value="" 
+        />
+
+        <Picker.Item
+        style={{fontSize: 14 }}
+        label="Third Year" 
+        value="" 
+        />
+
+        <Picker.Item 
+        style={{fontSize: 14 }}
+        label="Fourth Year" 
+        value="" 
+        />
+
       </Picker>
     </View>
     </View>
@@ -26,13 +52,19 @@ const YearLevel = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 10,
-    alignItems: "center"
-
+    paddingLeft: 30,
+  },
+  headtext: {
+    fontSize: 16,
+    paddingBottom: 5,
+    paddingTop: 15,
   },
   pickerborder: {
     borderWidth: 1,
-  }
+    width: 150,
+    height:45,
+    borderRadius:10,
+  },
 });
 
 export default YearLevel;

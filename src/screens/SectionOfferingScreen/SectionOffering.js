@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import React from "react";
 import styles from "./styles"
 import SchoolYear from "./SchoolYear";
@@ -14,25 +14,27 @@ import ViewOpenSubjectButton from "./ViewOpenSubjectsButton";
 
 const SectionOffering = () => {
   return (
-    <View>
-      <Text>12323</Text>
-      <Text>12323</Text>
-      <Text>12323</Text>
-      <Text>12323</Text>
-      <Text>12323</Text>
-      <Text>12323</Text>
+    <ScrollView>
+    <View style={styles.background}>
+      <Text style={styles.texthead}>Section Offering</Text>
     <View style={styles.container}>
-     <SchoolYear />
+      <ScrollView horizontal={true}>
+      <SchoolYear />
       <Term />
-      <Program />
+      </ScrollView>
+      <ScrollView horizontal={true}>
       <YearLevel />
       <ParentSection />
+      </ScrollView>
+      <Program />
+      <ScrollView horizontal={true}>
       <ViewSectionButton />
       <ViewOpenSubjectButton />
+      </ScrollView>
       <ViewSection />
-     
     </View>
     </View>
+    </ScrollView>
   );
 };
 

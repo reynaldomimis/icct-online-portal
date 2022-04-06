@@ -6,16 +6,31 @@ const Term = () => {
   const [selectedValue, setSelectedValue] = useState("");
   return (
     <View style={styles.container}>
-      <Text>Term:</Text>
+      <Text style={styles.headtext}>Term:</Text>
       <View style={styles.pickerborder}>
       <Picker
+      mode="dropdown"
         selectedValue={selectedValue}
-        style={{ height: 40, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
-        <Picker.Item label="First" value="" />
-        <Picker.Item label="Second" value="" />
-        <Picker.Item label="Third" value="" />
+        <Picker.Item 
+        style={{fontSize: 14 }}
+        label="First" 
+        value="" 
+        />
+        
+        <Picker.Item 
+        style={{fontSize: 14 }}
+        label="Second" 
+        value="" 
+        />
+
+        <Picker.Item
+        style={{fontSize: 14 }}
+         label="Third" 
+         value="" 
+         />
+
       </Picker>
       </View>
     </View>
@@ -24,12 +39,18 @@ const Term = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 10,
-    alignItems: "center"
+    paddingLeft: 45,
+  },
+  headtext: {
+    fontSize: 16,
+    paddingBottom:5,
   },
   pickerborder: {
     borderWidth: 1,
-  }
+    width: 150,
+    height:45,
+    borderRadius: 10,
+  },
 });
 
 export default Term;

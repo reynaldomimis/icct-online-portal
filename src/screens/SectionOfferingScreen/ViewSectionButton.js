@@ -3,28 +3,30 @@ import { StyleSheet, View, TouchableOpacity } from 'react-native';
 
 const ViewSectionButton= () => {
     return (
-    <TouchableOpacity style={styles.container}>
-    <Icon name="search1" size={20} style={styles.button}> View Sections </Icon>
+      <View style={styles.container}>
+    <TouchableOpacity>
+    <Icon name="search1" size={14} style={styles.button}> View Sections </Icon>
     </TouchableOpacity>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-  width: 250,
-  paddingTop: 35,
-  paddingBottom: 5,
-  alignSelf:'center',
+    paddingTop: 20,
+    paddingRight: 20,
+    paddingLeft: 30,
 
 },
   button: {
-    color: "white",
-    backgroundColor: 'orange',
-    borderRadius: 100,
-    height:40,
-    paddingTop: 10,
-    paddingLeft: 40,
-    
+    color: "#FFFFFF",
+    backgroundColor: '#1E90FF',
+    height:45,
+    width: 150,
+    paddingLeft: 20,
+    paddingTop: 15,
+    borderRadius: 10,
+    borderWidth:1,
   }
 
 });

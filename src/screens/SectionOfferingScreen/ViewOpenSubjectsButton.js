@@ -3,29 +3,29 @@ import { StyleSheet, View, TouchableOpacity } from 'react-native';
 
 const ViewOpenSubjectButton = () => {
     return (
-    <TouchableOpacity style={styles.container}>
-    <Icon name="search1" size={20} style={styles.button}>  View Open Subjects </Icon>
+    <View style={styles.container}> 
+    <TouchableOpacity>
+    <Icon name="search1" size={14} style={styles.button}>  View Open Subjects </Icon>
     </TouchableOpacity>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-
-  paddingTop: 5,
-  paddingBottom: 20,
-  alignSelf:'center',
-
+    paddingTop: 20,
+    paddingLeft: 10,
+    alignSelf:'center',
 },
   button: {
-    color: "white",
-    backgroundColor: 'orange',
-    borderRadius: 100,
-    height:40,
-    paddingTop: 10,
-    paddingLeft: 15,
-    width: 250,
-    
+    color: "#FFFFFF",
+    backgroundColor: '#1E90FF',
+    height: 45,
+    width: 160,
+    paddingLeft: 7,
+    paddingTop:15,
+    borderRadius: 10,
+    borderWidth:1,
   }
 
 });

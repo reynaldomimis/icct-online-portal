@@ -9,6 +9,9 @@ export default class ViewSection extends Component {
       tableHead: ['Subject Code', 'Sucject Title', 'Lec', 'Lab', 'Tuition Units', 'Credited Units' , 'Section', 'Professor', 'Slots', 'Day', 'Time', 'Room'],
       tableData: [
         ['OLENGL007', 'TECHNICAL REPORT WRITING', '3', '0', '3', '3', 'BSIT Third Year-OLRS22', 'RIVERA RECHELLE AQUINO', '1', 'M', 'O6:00PM - 07:00PM', 'VRMRS22'],
+        ['OLENGL007', 'TECHNICAL REPORT WRITING', '3', '0', '3', '3', 'BSIT Third Year-OLRS22', 'RIVERA RECHELLE AQUINO', '1', 'M', 'O6:00PM - 07:00PM', 'VRMRS22'],
+        ['OLENGL007', 'TECHNICAL REPORT WRITING', '3', '0', '3', '3', 'BSIT Third Year-OLRS22', 'RIVERA RECHELLE AQUINO', '1', 'M', 'O6:00PM - 07:00PM', 'VRMRS22'],
+        ['OLENGL007', 'TECHNICAL REPORT WRITING', '3', '0', '3', '3', 'BSIT Third Year-OLRS22', 'RIVERA RECHELLE AQUINO', '1', 'M', 'O6:00PM - 07:00PM', 'VRMRS22'],
       ]
     }
   }
@@ -16,23 +19,66 @@ export default class ViewSection extends Component {
   render() {
     const state = this.state;
     return (
-      <View style={styles.container}>
-        <Text>SECTION: OLENGL007</Text>
+        <View style={styles.container}>
+        <Text style={styles.textheader}>SECTION: OLENGL007</Text>
+        <View style={styles.tablecontainer}>
         <ScrollView horizontal={true}>
-        <Table borderStyle={{borderWidth: 2, borderColor: 'black'}}>
-          <Row data={state.tableHead} widthArr={[100,100,100,100,100,100,100,100,100,100,100,100]} style={styles.head} />
-          <Rows data={state.tableData} widthArr={[100,100,100,100,100,100,100,100,100,100,100,100]} style={styles.row}/>
+        <Table borderStyle={{borderWidth: 2, borderColor: '#DCDCDC'}}>
+
+          <Row data={state.tableHead} widthArr={[150,500,100,100,120,140,200,300,100,100,200,100]} 
+          style={styles.head} 
+          textStyle={styles.texthead}
+          />
+
+          <Rows data={state.tableData} widthArr={[150,500,100,100,120,140,200,300,100,100,200,100]} 
+          style={styles.row}
+          textStyle={styles.textrow}
+          />
+
         </Table>
         </ScrollView>
+        </View>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  container: {padding: 16, paddingTop: 30, backgroundColor: '#f1f8ff' },
-  head: { height: 30, backgroundColor: '#f1f8ff' },
-  row: { height: 70, backgroundColor: '#fff' },
-  text: { textAlign: "center" }
+  container: {
+    paddingLeft: 30,
+    paddingTop: 50, 
+    paddingBottom: 100,
+  },
+  tablecontainer: {
+    paddingLeft: 10,
+    paddingRight:10,
+    paddingTop: 5,
+    paddingBottom: 5,
+    width: 350,
+    backgroundColor: '#DCDCDC',
+  },
+  head: { 
+    backgroundColor: '#1E90FF',
+  },
+  row: { 
+    backgroundColor: '#FFFFFF',
+  },
+  textheader: {
+  paddingBottom:30,
+  fontSize: 18,
+  },
+  texthead: {
+    color: '#FFFFFF',
+    paddingBottom: 5,
+    paddingTop: 5, 
+    textAlign: "center",
+    fontSize: 16,
+  },
+  textrow: { 
+    paddingBottom: 1,
+    paddingTop: 1, 
+    textAlign: "center",
+    fontSize: 14,
+  },
 });
 
