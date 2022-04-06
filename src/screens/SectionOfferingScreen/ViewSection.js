@@ -20,8 +20,8 @@ export default class ViewSection extends Component {
         <Text>SECTION: OLENGL007</Text>
         <ScrollView horizontal={true}>
         <Table borderStyle={{borderWidth: 2, borderColor: 'black'}}>
-          <Row data={state.tableHead} widthArr={[100,100,100,100,100,100,100,100,100,100,100,100]} textStyle={styles.text} style={styles.head} />
-          <Rows data={state.tableData} widthArr={[100,100,100,100,100,100,100,100,100,100,100,100]} textStyle={styles.text} style={styles.row}/>
+          <Row data={state.tableHead} widthArr={[100,100,100,100,100,100,100,100,100,100,100,100]} style={styles.head} />
+          <Rows data={state.tableData} widthArr={[100,100,100,100,100,100,100,100,100,100,100,100]} style={styles.row}/>
         </Table>
         </ScrollView>
       </View>
