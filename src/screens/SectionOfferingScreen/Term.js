@@ -7,6 +7,7 @@ const Term = () => {
   return (
     <View style={styles.container}>
       <Text>Term:</Text>
+      <View style={styles.pickerborder}>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 40, width: 300 }}
@@ -16,6 +17,7 @@ const Term = () => {
         <Picker.Item label="Second" value="" />
         <Picker.Item label="Third" value="" />
       </Picker>
+      </View>
     </View>
   );
 }
@@ -24,6 +26,9 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 10,
     alignItems: "center"
+  },
+  pickerborder: {
+    borderWidth: 1,
   }
 });
 

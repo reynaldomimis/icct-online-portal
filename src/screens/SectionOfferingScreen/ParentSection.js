@@ -7,6 +7,7 @@ const ParentSection = () => {
   return (
     <View style={styles.container}>
       <Text>Year Level:</Text>
+      <View style={styles.pickerborder}>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 40, width: 300}} borderStyle={{borderWidth: 4, borderColor: 'blue'}}
@@ -23,6 +24,7 @@ const ParentSection = () => {
         <Picker.Item label="OLRS22" value="" />
       </Picker>
     </View>
+    </View>
   );
 }
 
@@ -30,6 +32,9 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 10,
     alignItems: "center",
+  },
+  pickerborder: {
+    borderWidth: 1,
   }
 });
 

@@ -7,6 +7,7 @@ const YearLevel = () => {
   return (
     <View style={styles.container}>
       <Text>Year Level:</Text>
+      <View style={styles.pickerborder}>
       <Picker
         selectedValue={selectedValue}
         style={{ height: 40, width: 300 }}
@@ -19,6 +20,7 @@ const YearLevel = () => {
         <Picker.Item label="Fourth Year" value="" />
       </Picker>
     </View>
+    </View>
   );
 }
 
@@ -27,6 +29,9 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     alignItems: "center"
 
+  },
+  pickerborder: {
+    borderWidth: 1,
   }
 });
 
